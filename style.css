@@ -1,0 +1,217 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  background-color: #282828;
+}
+.container .box {
+  height: 12%;
+  width: 12%;
+  margin: 2%;
+}
+.container #one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: lightgrey;
+  background-color: black;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #one:hover {
+  transition: all 900ms;
+  transform: translateY(33px) scale(1.1);
+  background-color: lightgrey;
+  color: black;
+}
+.container #two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  color: black;
+  background-color: lightgrey;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #two:hover {
+  transition: all 900ms;
+  transform: translateY(-33px) scale(1.2);
+  background-color: black;
+  color: lightgrey;
+}
+.container #three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.5rem;
+  color: yellow;
+  background-color: red;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #three:hover {
+  transition: all 900ms;
+  transform: translateY(33px) scale(1.3);
+  background-color: yellow;
+  color: red;
+}
+.container #four {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: blue;
+  background-color: yellow;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #four:hover {
+  transition: all 900ms;
+  transform: translateY(-33px) scale(1.1);
+  background-color: blue;
+  color: yellow;
+}
+.container #five {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  color: red;
+  background-color: silver;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #five:hover {
+  transition: all 900ms;
+  transform: translateY(-33px) scale(1.2);
+  background-color: red;
+  color: silver;
+}
+.container #six {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: hotpink;
+  background-color: green;
+  border: 0.3rem double #282828;
+  align-self: center;
+  height: 9%;
+  width: 12%;
+}
+.container #six:hover {
+  transition: all 900ms;
+  transform: translateY(33px) scale(1.3);
+  background-color: hotpink;
+  color: green;
+}
+.container .buttons {
+  border: 1px solid rgba(128, 128, 128, 0.31);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 18px;
+  background-color: rgba(192, 192, 192, 0.207);
+  -webkit-backdrop-filter: blur(12px);
+          backdrop-filter: blur(12px);
+}
+.container .buttons:hover #btn1 {
+  transition: all 100ms;
+  transform: translateY(30px);
+}
+.container .buttons:hover #btn2 {
+  transition: all 300ms;
+  transform: translateY(-60px);
+}
+.container .buttons:hover #btn3 {
+  transition: all 600ms;
+  transform: translateY(-140px);
+}
+.container .buttons:hover #btn4 {
+  transition: all 900ms;
+  transform: translateY(-210px);
+}
+.container .buttons:hover #btn5 {
+  transition: all 1200ms;
+  transform: translateY(-270px);
+}
+.container .buttons:hover #btn6 {
+  transition: all 1500ms;
+  transform: translateY(-320px);
+}
+.container #btn1 {
+  background-color: red;
+  height: 100px;
+  width: 200px;
+}
+.container #btn1:hover {
+  background-color: maroon;
+  color: white;
+}
+.container #btn2 {
+  background-color: blue;
+  height: 90px;
+  width: 180px;
+}
+.container #btn2:hover {
+  background-color: navy;
+  color: white;
+}
+.container #btn3 {
+  background-color: green;
+  height: 80px;
+  width: 160px;
+}
+.container #btn3:hover {
+  background-color: #000100;
+  color: white;
+}
+.container #btn4 {
+  background-color: yellow;
+  height: 70px;
+  width: 140px;
+}
+.container #btn4:hover {
+  background-color: olive;
+  color: white;
+}
+.container #btn5 {
+  background-color: brown;
+  height: 60px;
+  width: 120px;
+}
+.container #btn5:hover {
+  background-color: #3f1010;
+  color: white;
+}
+.container #btn6 {
+  background-color: grey;
+  height: 50px;
+  width: 100px;
+}
+.container #btn6:hover {
+  background-color: #404040;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

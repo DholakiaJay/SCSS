@@ -1,0 +1,145 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+$bgcolor:#282828;
+
+@mixin fileformat($clr: red, $bg: black, $fs: 1.1rem,$tx:0px, $scl: 1.1 ,$as: center) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $fs;
+    color: $clr;
+    background-color: $bg;
+    border: 0.3rem double $bgcolor;
+    align-self: $as;
+    height: 9%;
+    width: 12%;
+    &:hover {
+        transition: all 900ms;
+        transform:translateY($tx) scale($scl);
+        background-color: $clr;
+        color: $bg;
+        
+    }
+    
+}
+@mixin btn($btnbgclr:white,$h:30px,$w:30px)
+    {
+        background-color:$btnbgclr;
+        height: $h;
+        width: $w;
+        &:hover
+        {
+            background-color: darken($color:$btnbgclr, $amount:25 );
+            color: white;
+        }
+    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    flex-wrap: wrap;
+    background-color: $bgcolor;
+
+    .box {
+        height: 12%;
+        width: 12%;
+
+        margin: 2%;
+    }
+    #one {
+        @include fileformat(lightgrey, black, 1.5rem,33px, 1.1);
+    }
+    #two {
+        @include fileformat(black, lightgrey, 2rem,-33px, 1.2);
+    }
+    #three {
+        @include fileformat(yellow, red, 2.5rem,33px, 1.3);
+    }
+    #four {
+        @include fileformat(blue, yellow, 3rem,-33px,1.1);
+    }
+    #five {
+        @include fileformat(red, silver, 3.5rem,-33px, 1.2);
+    }
+    #six {
+        @include fileformat(hotpink, green, 4rem,33px, 1.3);
+    }
+    .buttons
+    {
+        border: 1px solid rgba(128, 128, 128, 0.31);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 18px;
+        background-color:rgba(192, 192, 192, 0.207);
+        backdrop-filter: blur(12px);
+       
+        &:hover #btn1
+        {
+            transition: all 100ms;
+             transform: translateY(30px);
+        }
+        &:hover #btn2
+        {
+            transition: all 300ms;
+             transform: translateY(-60px);
+        }
+        &:hover #btn3
+        {
+            transition: all 600ms;
+             transform: translateY(-140px);
+        }
+        &:hover #btn4
+        {
+            transition: all 900ms;
+             transform: translateY(-210px);
+        }
+        &:hover #btn5
+        {
+            transition: all 1200ms;
+             transform: translateY(-270px);
+        }
+        &:hover #btn6
+        {
+            transition: all 1500ms;
+             transform: translateY(-320px);
+        }
+    }
+    #btn1
+    {
+        @include btn(red,100px,200px)
+
+    }
+    #btn2
+    {
+        @include btn(blue,90px,180px)
+
+    }
+    #btn3
+    {
+        @include btn(green,80px,160px)
+
+    }
+    #btn4
+    {
+        @include btn(yellow,70px,140px)
+
+    }
+    #btn5
+    {
+        @include btn(brown,60px,120px)
+
+    }
+    #btn6
+    {
+        @include btn(grey,50px,100px)
+
+    }
+
+}
