@@ -20,12 +20,20 @@ body {
     color: black;
     text-transform: capitalize;
 }
+
 .cheque {
     height: 54vh;
     width: 72vw;
     background-color: $bgclr;
     padding: 0px 0px;
-
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+&:hover
+{
+    transition: all 2190ms;
+    
+    transform: translateY(18px);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+}
     .topbar {
         height: 18%;
         width: 100%;
@@ -36,10 +44,12 @@ body {
 
         .bankdetails {
             height: 12%;
-            width: 27%;
+            width: 36%;
             padding: 9px;
             @include basic();
             gap: 18px;
+            
+            
 
             .logo {
                 justify-content: flex-start;
@@ -47,13 +57,30 @@ body {
 
                 @include basic();
                 padding: 9px;
+                border-radius: 50px;
+                background-color:black;
+                color: whitesmoke;
+                font-weight: 900;
+                
                 border: 3px solid black;
+                box-shadow: rgba(3, 113, 239, 0.512) 0px 0px 0px 3px;
             }
             .name {
                 @include basic();
                 justify-content: flex-start;
                 align-items: flex-start;
                 flex-direction: column;
+                font-weight: 630;
+
+                & span:nth-child(1)
+                {
+                    color: rgba(12, 26, 113, 0.995);
+                    
+                }
+                & span:nth-child(2)
+                {
+                    font-size: 0.6rem;
+                }
             }
         }
     }
@@ -196,4 +223,5 @@ body {
         font-size: 0.81rem;
         background-color: rgba(190, 224, 237, 0.825);
     }
+    
 }

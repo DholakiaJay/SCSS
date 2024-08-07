@@ -16,6 +16,12 @@ body {
   width: 72vw;
   background-color: skyblue;
   padding: 0px 0px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.3) 0px -3px 0px inset;
+}
+.cheque:hover {
+  transition: all 2190ms;
+  transform: translateY(18px);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
 }
 .cheque .topbar {
   height: 18%;
@@ -33,7 +39,7 @@ body {
 }
 .cheque .topbar .bankdetails {
   height: 12%;
-  width: 27%;
+  width: 36%;
   padding: 9px;
   display: flex;
   justify-content: center;
@@ -55,7 +61,12 @@ body {
   color: black;
   text-transform: capitalize;
   padding: 9px;
+  border-radius: 50px;
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 900;
   border: 3px solid black;
+  box-shadow: rgba(3, 113, 239, 0.512) 0px 0px 0px 3px;
 }
 .cheque .topbar .bankdetails .name {
   display: flex;
@@ -68,6 +79,13 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+  font-weight: 630;
+}
+.cheque .topbar .bankdetails .name span:nth-child(1) {
+  color: rgba(12, 26, 113, 0.995);
+}
+.cheque .topbar .bankdetails .name span:nth-child(2) {
+  font-size: 0.6rem;
 }
 .cheque .date {
   padding: 9px;
